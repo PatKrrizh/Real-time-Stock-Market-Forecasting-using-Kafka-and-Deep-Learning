@@ -55,6 +55,7 @@ Data Provider: [Alpha Vantage](https://www.alphavantage.co/)
 
 ##### References:
 * <https://www.tensorflow.org/api_docs>
+* <https://kafka.apache.org/documentation/>
 * <https://www.alphavantage.co/documentation/>
 * <https://iexcloud.io/docs/api/>
 * <https://rapidapi.com/apidojo/api/yahoo-finance1>
