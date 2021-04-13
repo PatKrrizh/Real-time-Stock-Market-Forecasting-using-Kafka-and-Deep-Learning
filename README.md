@@ -53,3 +53,8 @@ Data Provider: [Alpha Vantage](https://www.alphavantage.co/)
 - Technical_model.py file contains the model training for Technical LSTM Model.
 - To make a real-time prediction run [predict.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/predict.ipynb) file.
 
+##### References:
+* <https://www.tensorflow.org/api_docs>
+* <https://www.alphavantage.co/documentation/>
+* <https://iexcloud.io/docs/api/>
+* <https://rapidapi.com/apidojo/api/yahoo-finance1>
