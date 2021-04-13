@@ -19,6 +19,6 @@ Data Provider: [Alpha Vantage](https://www.alphavantage.co/)
 
 #### Apache Kafka:
 - Download Apache Kafka
-  (https://www.apache.org/dyn/closer.cgi?path=/kafka/2.7.0/kafka_2.13-2.7.0.tgz)
+  - (https://www.apache.org/dyn/closer.cgi?path=/kafka/2.7.0/kafka_2.13-2.7.0.tgz)
 - Open terminal and run the following code to install Apache Kafka for Python:
-  `~$pip install kafka-python`
+  - `~$pip install kafka-python`
