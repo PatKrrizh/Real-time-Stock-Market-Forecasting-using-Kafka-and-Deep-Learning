@@ -13,12 +13,41 @@ In this project, as a response to the requirements, I developed a Real-Time Stoc
 Data Provider: [Alpha Vantage](https://www.alphavantage.co/)
 
 # Architecture
-![Architecture](https://github.com/radoslawkrolikowski/financial-market-data-analysis/blob/master/assets/app-architecture.png)
 
 ### Installation
 
 #### Apache Kafka:
 - Download Apache Kafka
-  - (https://www.apache.org/dyn/closer.cgi?path=/kafka/2.7.0/kafka_2.13-2.7.0.tgz)
+  - https://www.apache.org/dyn/closer.cgi?path=/kafka/2.7.0/kafka_2.13-2.7.0.tgz
 - Open terminal and run the following code to install Apache Kafka for Python:
   - `~$pip install kafka-python`
+
+#### Alpha Vantage:
+- Link to Alpha Vantage:
+  - https://www.alphavantage.co/
+
+- Register yourself to Alpha Vantage to get the API Key.
+- Open terminal and run the following code to install Alpha Vantage Module:
+  - `~$pip install alpha_vantage`
+
+### Usage:
+- Unpack downloaded Kafka Repository to a specific path.
+- Before every execution of the application, we must start the Zookeeper and Kafka brokers using the terminal:
+  - From the root of Apache Kafka folder, run the following command in terminal to start Zookeeper:
+    - `~$sh bin/zookeeper-server-start.sh config/zookeeper.properties`
+  - Open another Terminal and run the following command from the root of Apache Kafka folder to start Apache Kafka broker.
+    - `~$sh bin/kafka-server-start.sh config/server.properties`
+- Create Kafka topics if running the application for the first time:
+  - Create topic:
+    - `$bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 3 --partitions 1 --topic topic_name`
+  - List available topics:
+    - `$bin/kafka-topics.sh --list --bootstrap-server localhost:9092`
+- Specify your configuration of Apache Kafka and Alpha Vantage API key by modifying the following files:
+  - Producer_first_time.py 
+  - Producer.py
+  - Consumer.py
+- Now we can run producer_first_time.py (if running the code for the first time) or producer.py to fetch financial data and send it to Kafka broker.
+- Run consumer.py to fetch data from Kafka broker.
+- basic_model.py file contains the model training for basic LSTM Model.
+- Technical_model.py file contains the model training for Technical LSTM Model.
+- To make a real-time prediction run predict.py file.
