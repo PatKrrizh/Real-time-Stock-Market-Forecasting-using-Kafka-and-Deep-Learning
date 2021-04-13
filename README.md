@@ -44,11 +44,11 @@ Data Provider: [Alpha Vantage](https://www.alphavantage.co/)
   - List available topics:
     - `$bin/kafka-topics.sh --list --bootstrap-server localhost:9092`
 - Specify your configuration of Apache Kafka and Alpha Vantage API key by modifying the following files:
-  - [producer_first_time.ipynb ](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/producer_first_time.ipynb)
-  - [producer.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/producer.ipynb)
-  - [consumer.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/consumer.ipynb)
-- Now we can run [producer_first_time.ipynb ](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/producer_first_time.ipynb) (if running the code for the first time) or producer.py to fetch financial data and send it to Kafka broker.
-- Run [consumer.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/consumer.ipynb) to fetch data from Kafka broker.
+  - [producer_first_time.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/producer_first_time.ipynb) file
+  - [producer.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/producer.ipynb) file
+  - [consumer.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/consumer.ipynb) file
+- Now we can run [producer_first_time.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/producer_first_time.ipynb) file (if running the code for the first time) or producer.py to fetch financial data and send it to Kafka broker.
+- Run [consumer.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/consumer.ipynb) file to fetch data from Kafka broker.
 - [basic_model.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/basic_model.ipynb) file contains the model training for basic LSTM Model.
 - Technical_model.py file contains the model training for Technical LSTM Model.
 - To make a real-time prediction run [predict.ipynb](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/predict.ipynb) file.
