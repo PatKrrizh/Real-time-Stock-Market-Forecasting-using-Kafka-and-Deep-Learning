@@ -13,7 +13,7 @@ In this project, as a response to the requirements, I developed a Real-Time Stoc
 Data Provider: [Alpha Vantage](https://www.alphavantage.co/)
 
 # Architecture
-![Architecture](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/Architecture%20copy.png)
+![Architecture](https://github.com/PatKrrizh/Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning/blob/main/Architecture.png)
 
 ### Installation
 
