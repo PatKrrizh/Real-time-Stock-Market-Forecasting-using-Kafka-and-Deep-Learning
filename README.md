@@ -1,1 +1,1 @@
-# Real-time-Stock-Market-Forecasting-using-Kafka-and-Deep-Learning
+# Real-time Stock Prediction
